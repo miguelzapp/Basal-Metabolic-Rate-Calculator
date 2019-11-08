@@ -6,5 +6,6 @@ The Basal Metabolic Rate is the number of calories required to keep your body fu
 ### Setup
 It's very simple, you just clone this repostory on your computer and run the 'main.py' file in a terminal using Python 3 or higher.
 
-``` python3 main.py ```
+To run the script:
+    ``` python3 main.py ```
 ## And, that's all! Enjoy! :)
