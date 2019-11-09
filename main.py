@@ -39,7 +39,7 @@ def initial():
     print('   /::::::\   \:::\    \    /:::/  |::|___|______    /::::::\   \:::\    \   ')
     time.sleep(0.1)
     print('  /:::/\:::\   \:::\ ___\  /:::/   |::::::::\    \  /:::/\:::\   \:::\____\  ')
-    time.sleep(0.1) 
+    time.sleep(0.1)
     print(' /:::/__\:::\   \:::|    |/:::/    |:::::::::\____\/:::/  \:::\   \:::|    | ')
     time.sleep(0.1)
     print(' \:::\   \:::\  /:::|____|\::/    / ~~~~~/:::/    /\::/   |::::\  /:::|____| ')
@@ -80,7 +80,7 @@ def initial():
 
 
 def start():
-    home_input = input(colors.WARNING + 'Press "S" to start calculator or "E" to exit the program. Then press enter. ' + colors.ENDC)
+    home_input = input(colors.WARNING + 'Press "S" to start calculator, "E" to exit the program or "I" to show info. Then press enter. ' + colors.ENDC)
     if home_input in ['S','s']:
         input1 = input(colors.CYAN + "Are you a Man (M) or a Woman (W) ? " + colors.ENDC)
         if input1 in ['M','m']:
@@ -106,11 +106,17 @@ def start():
     elif home_input in ['E','e']:
         print(colors.FAIL + 'Leaving program' + colors.ENDC)
         exit()
+    elif home_input in ['I','i']:
+        print(colors.OKGREEN + 'This is a basic BMS (Basal Metabolic Rate Calculator) terminal script calculator\nwritten in Python! The Basal Metabolic Rate is the number of calories\nrequired to keep your body functioning at rest.' + colors.ENDC)
+        time.sleep(3)
+        start()
     else:
         print(colors.FAIL + 'Error, type a valid input' + colors.ENDC)
         start()
 
 initial()
 start()
+
+
 
 
