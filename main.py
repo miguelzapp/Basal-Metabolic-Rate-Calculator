@@ -99,7 +99,7 @@ def start():
             input4 = int(input(colors.CYAN + "How old are you ? " + colors.ENDC))
 
             #print("you're a woman")
-            cal = 66.5 + ( 9.5 * input2 ) + ( 4.8 * input3 ) - ( 4.7 * input4 )
+            cal = 55 + ( 9.5 * input2 ) + ( 4.8 * input3 ) - ( 4.7 * input4 )
             print(colors.OKGREEN + "Your Basal Metabolic Rate (BMR) is " + str(cal) + " kcal" + colors.ENDC)
             time.sleep(2)
             start()
